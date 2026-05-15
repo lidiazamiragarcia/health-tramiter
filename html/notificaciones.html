@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Notificaciones - Health Tramiter</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/estilo.css">
+
+</head>
+
+<body>
+
+<section class="contenedor-notificaciones">
+
+<div class="notificaciones-box">
+
+<div class="logo">
+    <img src="../imagenes/logo.png" alt="Health Tramiter">
+</div>
+
+<div class="header-notificaciones">
+
+    <h3 class="title-h3">Notificaciones</h3>
+
+    <div class="cantidad-notificaciones">
+
+        <img 
+            src="../imagenes/notificacion-alerta.png" 
+            alt="Notificaciones"
+        >
+
+        <span>Tiene 3 notificaciones</span>
+
+    </div>
+
+</div>
+
+<div class="cards-notificaciones">
+
+    <!-- NOTIFICACIÓN APROBADA -->
+
+    <div class="card-notificacion success">
+
+        <div class="notificacion-header">
+
+            <img 
+                src="../imagenes/check.png"
+                alt="Aprobado"
+            >
+
+            <h4>Trámite aprobado</h4>
+
+        </div>
+
+        <p>
+            Tu solicitud de autorización fue aprobada
+        </p>
+
+        <span>Fecha: 10/08/2025</span>
+
+        <div class="buttons-notificacion">
+
+            <button>
+                Ver detalle
+            </button>
+
+            <button class="btn-leido">
+                Leído
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- NOTIFICACIÓN RECHAZADA -->
+
+    <div class="card-notificacion danger">
+
+        <div class="notificacion-header">
+
+            <img 
+                src="../imagenes/error.png"
+                alt="Rechazado"
+            >
+
+            <h4>Trámite rechazado</h4>
+
+        </div>
+
+        <p>
+            Tu solicitud fue rechazada
+        </p>
+
+        <span>Fecha: 08/08/2025</span>
+
+        <div class="buttons-notificacion">
+
+            <button>
+                Ver detalle
+            </button>
+
+            <button class="btn-leido">
+                Leído
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- RECORDATORIO -->
+
+    <div class="card-notificacion warning">
+
+        <div class="notificacion-header">
+
+            <img 
+                src="../imagenes/recordatorio.png"
+                alt="Recordatorio"
+            >
+
+            <h4>Recordatorio</h4>
+
+        </div>
+
+        <p>
+            Tienes un trámite pendiente
+        </p>
+
+        <span>Fecha: 07/08/2025</span>
+
+        <div class="buttons-notificacion">
+
+            <button>
+                Ver detalle
+            </button>
+
+            <button class="btn-leido">
+                Leído
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer-notificaciones">
+
+    <button class="btn-marcar">
+        Marcar todos
+    </button>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>

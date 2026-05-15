@@ -1,418 +1,304 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* =========================================================
+   HEALTH TRAMITER - estilo.css
+========================================================= */
 
-body{
-    background-color: #E7EEF4;
-    font-family: "poppins", sans-serif;
-    min-height: 100vh;
-}
-
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.card{
-    max-width: 500px;
-    width: 100%;
-    padding: 30px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     gap: 20px;
-}
-
-.logo{
-    display: flex;
-    justify-content: center;
-}
-
-.logo img{
-    width: 80px;
-    height: auto;
-}
-
-input, select, button{
-    width: 100%;
-    height: 45px;
-    border-radius: 6px;
-    border: none;
-}
-
-input, select{
-    padding-left: 10px;
-}
-
-button{
-    background-color: #96ADE3;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover{
-    opacity: 0.9;
-}
-
-.layout{
-    display: flex;
-    min-height: 100vh;
-}
-
-.sidebar{
-    width: 80px;
-    background: white;
-    padding: 20px;
-}
-
-.menu{
-    list-style: none;
-    margin-top: 30px;
-}
-
-.menu li{
-    margin-bottom: 20px;
-}
-
-.content{
-    flex: 1;
-    padding: 60px;
-}
-
-
-/* LOGIN */
-
-.contenedor-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.login-box{
-    width: 420px;
-    padding: 60px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background-color: #eff1f8;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.login-box form{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.title-h3{
-    padding: 20px;
-
-    /* RECUPERAR CONTRASEÑA*/
-}
-.contenedor-recuperarcontraseña{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.recuperarcontraseña-box{
-    width: 420px;
-    padding: 60px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background-color: #eff1f8;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
-}
-
-.recuperarcontraseña-box form{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-/* REGISTRO DE USUARIO */
-.contenedor-registroUsuario{
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-}
-
-.registroUsuario-box{
-width:100%;
-max-width:500px;
-padding:40px;
-border:1px solid #ccc;
-border-radius:20px;
-background-color:#eff1f8;
-text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-}
-
-.registroUsuario-box img{
-width:120px;
-margin-bottom:10px;
-}
-
-.form-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-margin-top:20px;
-}
-
-.form-grid input{
-height:45px;
-padding-left:10px;
-border:none;
-border-radius:6px;
-}
-
-.center-component{
-    align-content: center;
-    padding:20px;
-}
-
-button{
-    width: 100%;
-    max-width: 250px;
-}
-
-.btn-registro{
-grid-column:1/3;
-height:45px;
-border:none;
-border-radius:6px;
-background-color:#96ADE3;
-cursor:pointer;
-}
-
-.btn-registro:hover{
-opacity:0.9;
-}
-
-/* ACTUALIZAR DATOS */
-
-.contenedor-actualizardatos{
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-}
-
-.actualizardatos-box{
-width:100%;
-max-width:500px;
-padding:40px;
-border:1px solid #ccc;
-border-radius:20px;
-background-color:#eff1f8;
-text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-}
-
-.actualizardatos-box img{
-width:120px;
-margin-bottom:10px;
-}
-
-.form-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-margin-top:20px;
-}
-
-.form-grid input{
-height:45px;
-padding-left:10px;
-border:none;
-border-radius:6px;
-}
-
-.center-component{
-    align-content: center;
-    padding:20px;
-}
-
-button{
-    width: 100%;
-    max-width: 250px;
-}
-
-.btn-registro{
-grid-column:1/3;
-height:45px;
-border:none;
-border-radius:6px;
-background-color:#96ADE3;
-cursor:pointer;
-}
-
-.btn-registro:hover{
-opacity:0.9;
-}
-
-/* HOME */
+/* RESET GENERAL */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-
 body{
-    font-family:'Audiowide', sans-serif;
-    background-color:#E7EEF4;
-}
-
-
-.layout{
-    display:flex;
+    background:#E7EEF4;
+    font-family:'Poppins', sans-serif;
     min-height:100vh;
 }
 
-
-.sidebar{
-    width:220px;
-    background:white;
-    padding:20px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    box-shadow:2px 0 10px rgba(0,0,0,0.05);
-}
-
-
-.logo-sidebar{
-    width:80px;
-    margin-bottom:30px;
-}
-
-
-.menu{
-    list-style:none;
-    width:100%;
-}
-
-.menu li{
-    margin-bottom:20px;
-}
-
-.menu a{
-    text-decoration:none;
-    color:#333;
-    font-size:14px;
-    display:block;
-    padding:10px;
-    border-radius:6px;
-    transition:0.3s;
-}
-
-
-.menu a:hover{
-    background:#E7EEF4;
-}
-
-.logout{
-    margin-top:auto;
-    text-decoration:none;
-    color:white;
-    background:#96ADE3;
-    padding:10px;
-    width:100%;
-    text-align:center;
-    border-radius:6px;
-    transition:0.3s;
-}
-
-.logout:hover{
-    opacity:0.9;
-}
-
-.content{
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:60px;
-}
-
-.content h3{
-    margin-bottom:30px;
-}
-
-
-.btn-tramite{
-    padding:12px 25px;
-    border:none;
-    border-radius:6px;
-    background:#96ADE3;
-    color:black;
-    cursor:pointer;
-    font-size:14px;
-}
-
-.btn-tramite:hover{
-    opacity:0.9;
-}
-
-
-/* CARGAR DOCUMENTOS */
-
-body{
-    background:#eef2f7;
+section{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
+    min-height:100vh;
+    padding:20px;
 }
 
-.card{
-    width:420px;
-    padding:60px;
-    border:1px solid #ccc;
-    border-radius:20px;
-    background-color:#eff1f8;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1); 
-}
+/* COMPONENTES GENERALES */
 
 .logo{
-    width:180px;
+    display:flex;
+    justify-content:center;
     margin-bottom:20px;
 }
 
-.input{
+.logo img{
+    width:110px;
+}
+
+.title-h3{
+    text-align:center;
+    color:#4b43a6;
+    font-size:28px;
+}
+
+input,
+select,
+textarea{
     width:100%;
-    padding:12px;
-    margin-top:15px;
-    border-radius:6px;
-    border:1px solid #ccc;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#fff;
+    outline:none;
 }
 
 button{
     width:100%;
-    max-width:250px;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#96ADE3;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.links{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.links a{
+    text-decoration:none;
+    color:#2364ff;
+}
+
+/* CARDS GENERALES */
+
+.login-box,
+.recuperarcontraseña-box,
+.registroUsuario-box,
+.actualizarPerfil-box,
+.tramite-box,
+.documentos-box,
+.consulta-box,
+.gestion-box,
+.notificaciones-box,
+.roles-box,
+.cierre-box{
+    background:#eff1f8;
+    border:1px solid #ccc;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:50px;
+    
+}
+
+/* LOGIN.HTML */
+
+.contenedor-login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.login-box{
+    width:420px;
+}
+
+.login-box form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* RECUPERAR.HTML */
+
+.contenedor-recuperarcontraseña{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.recuperarcontraseña-box{
+    width:420px;
+}
+
+/* REGISTROUSUARIO.HTML */
+
+.contenedor-registroUsuario{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.registroUsuario-box{
+    width:100%;
+    max-width:550px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.btn-registro{
+    grid-column:1/3;
+}
+
+/* DASHBOARD.HTML */
+
+.contenedor-dashboard{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.dashboard-box{
+    width:100%;
+    max-width:1400px;
+    min-height:90vh;
+    display:flex;
+    gap:20px;
+    padding:20px;
+    background:#eff1f8;
+    border:1px solid #ccc;
+    border-radius:20px;
+}
+
+.sidebar{
+    width:260px;
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.menu a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+    color:#111;
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+.menu img{
+    width:28px;
+}
+
+.main-content{
+    flex:1;
+    background:#fff;
+    border-radius:20px;
+    border:1px solid #ccc;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.button-panel{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .btn{
-    width:100%;
-    padding:14px;
-    margin-top:20px;
-    background:#7f94c9;
-    border:none;
-    border-radius:6px;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
+    width:auto;
+    padding:15px 30px;
+}
+
+/* FORMULARIOS GENERALES */
+
+.actualizarPerfil-box,
+.tramite-box,
+.documentos-box,
+.consulta-box,
+.gestion-box,
+.notificaciones-box,
+.roles-box,
+.cierre-box{
+    width:700px;
+    
+}
+
+.actualizarPerfil-box form,
+.tramite-box form,
+.documentos-box form,
+.gestion-box form,
+.roles-box form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.notificacion{
+    background:#fff;
+    padding:20px;
+    border-left:5px solid #79b1ea;
+    border-radius:10px;
+}
+
+.card-tramite{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+}
+
+.botones-cierre{
+    display:flex;
+    gap:20px;
+}
+
+@media(max-width:768px){
+
+    .dashboard-box{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn-registro{
+        grid-column:1;
+    }
+
+    .button-panel{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+    }
 }

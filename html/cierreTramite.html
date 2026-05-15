@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cierre de trámite - Health Tramiter</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/estilo.css">
+
+</head>
+
+<body>
+
+<section class="contenedor-cierre-tramite">
+
+<div class="cierre-tramite-box">
+
+<div class="logo">
+    <img src="../imagenes/logo.png" alt="Health Tramiter">
+</div>
+
+<h3 class="title-h3">Cierre de trámite</h3>
+
+<form class="form-cierre-tramite">
+
+    <div class="form-row">
+
+        <label>Número de trámite:</label>
+
+        <input 
+            type="text" 
+            value="00012345"
+            readonly
+        >
+
+    </div>
+
+    <div class="form-row">
+
+        <label>Usuario:</label>
+
+        <input 
+            type="text"
+            value="Juan Pérez"
+            readonly
+        >
+
+    </div>
+
+    <div class="estado-container">
+
+        <div class="estado-row">
+
+            <span>Aprobado</span>
+
+            <img 
+                src="../imagenes/check.png"
+                alt="Aprobado"
+                class="estado-icon success-icon"
+            >
+
+        </div>
+
+        <div class="estado-row">
+
+            <span>Rechazado</span>
+
+            <img 
+                src="../imagenes/error.png"
+                alt="Rechazado"
+                class="estado-icon error-icon"
+            >
+
+        </div>
+
+    </div>
+
+    <div class="motivo-container">
+
+        <label>Motivo:</label>
+
+        <textarea></textarea>
+
+    </div>
+
+    <div class="buttons-cierre-tramite">
+
+        <button type="button" class="btn-cancelar">
+            Cancelar
+        </button>
+
+        <button type="submit">
+            Cerrar
+        </button>
+
+    </div>
+
+</form>
+
+</div>
+
+</section>
+
+</body>
+</html>

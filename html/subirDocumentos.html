@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Subir documentos - Health Tramiter</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/estilo.css">
+
+</head>
+
+<body>
+
+<section class="contenedor-documentos">
+
+<div class="documentos-box">
+
+<div class="success-message">
+    Documento cargado exitosamente
+</div>
+
+<div class="logo">
+    <img src="../imagenes/logo.png" alt="Health Tramiter">
+</div>
+
+<h3 class="title-h3">Subir documentos</h3>
+
+<form class="form-documentos">
+
+    <div class="form-row">
+
+        <label>Tipo de documento</label>
+
+        <select>
+            <option>Autorización</option>
+        </select>
+
+    </div>
+
+    <div class="upload-section">
+
+        <label>Seleccionar archivo:</label>
+
+        <div class="upload-box">
+
+            <input type="file" id="archivo">
+
+            <label for="archivo" class="custom-file">
+            </label>
+
+            <span class="file-name">
+            </span>
+
+        </div>
+
+        <small>
+            Formatos permitidos: PDF, JPG, PNG (Máx. 5MB)
+        </small>
+
+    </div>
+
+    <div class="buttons-documentos">
+
+        <button type="submit">
+            Subir documento
+        </button>
+
+        <button type="button" class="btn-cancelar">
+            Cancelar
+        </button>
+
+    </div>
+
+</form>
+
+</div>
+
+</section>
+
+</body>
+</html>
