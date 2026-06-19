@@ -4,7 +4,11 @@
 ========================================================= */
 
 /* RESET GENERAL */
-*{
+:root{
+    --color-texto:#4b43a6;
+}
+
+* {
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -38,7 +42,7 @@ section{
 
 .title-h3{
     text-align:center;
-    color:#4b43a6;
+    color:var(--color-texto);
     font-size:28px;
 }
 
@@ -118,6 +122,17 @@ button:hover{
     display:flex;
     flex-direction:column;
     gap:15px;
+}
+
+.show-password-container{
+    display:flex;
+    gap:10px;
+}
+.show-password-container input{
+    width:auto;
+}
+.show-password-container label{
+    color:var(--color-texto);
 }
 
 /* RECUPERAR.HTML */

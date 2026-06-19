@@ -30,29 +30,17 @@
 
 <form class="form-login" id="formlogin" method="post" action="#">
 
-    <input 
-        type="email" 
-        placeholder="Correo electrónico"
-    >
+    <input id="user" value="" required type="email" placeholder="Correo electrónico">
 
     <div class="password-container">
-
-        <input 
-            type="password" 
-            placeholder="Contraseña"
-        >
-
-        <img 
-            src="../imagenes/view.png" 
-             alt="Mostrar contraseña"
-            class="icon-password"
-        >
-
+        <input id="password" value="" required type="password" placeholder="Contraseña">
+        <div class="show-password-container">
+            <input type="checkbox" id="show-password">
+            <label for="show-password">Mostrar contraseña</label>
+        </div>
     </div>
 
-    <button type="submit">
-        Iniciar sesión
-    </button>
+    <button type="submit">Iniciar sesión</button>
 
 </form>
 
@@ -77,6 +65,7 @@
 </div>
 
 </section>
-
+<script src="../js/main.js" type="module"></script>
+<script src="../js/md5.js"></script>
 </body>
 </html>
