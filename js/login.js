@@ -1,3 +1,5 @@
+import {ir, enviarPeticion} from './herramientas.js';
+
 export async function validarLogin() {
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let usuario =document.getElementById('user').value;
@@ -13,7 +15,7 @@ export async function validarLogin() {
     
     const datos={usuario, contrasena: md5(contraseña)};
     await enviarPeticion({
-        url: "http://localhost:8080/api/login",
+        url: "../backend/api/login/",
         method: "POST",
         param: datos,
         fSuccess: (resp)=>{
@@ -21,7 +23,7 @@ export async function validarLogin() {
                 alert("El usuario ha iniciado sesión correctamente.");
                 ir("dash.html")
             }
-            else {alert(resp.msg)}
+            else {alert(resp.msg || "Error en la petición");}
         }
     });
 }
