@@ -1,2 +1,2 @@
 
-console.log("Health Tramiter iniciado correctamente");
+console.log("Health Tramiter iniciado correctamente OK");
