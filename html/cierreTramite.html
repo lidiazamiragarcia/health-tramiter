@@ -1,113 +1,81 @@
 <!doctype html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Cierre de trámite - Health Tramiter</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
 <link rel="stylesheet" href="../css/estilo.css">
-
 </head>
-
 <body>
 
-<section class="contenedor-cierre-tramite">
+<section class="page-auth">
+<div class="cierre-tramite-box" style="padding:0;overflow:hidden;">
 
-<div class="cierre-tramite-box">
-
+<div style="padding:2rem;text-align:center;background:#f8fafc;border-bottom:1px solid var(--outline);">
 <div class="logo">
-    <img src="../imagenes/Logo.png" alt="Health Tramiter">
+<img src="../imagenes/Logo.png" alt="Health Tramiter">
+</div>
+<h3 class="title-h3">Cierre de trámite</h3>
+<p class="subtitle">Complete la resolución final del proceso</p>
 </div>
 
-<h3 class="title-h3">Cierre de trámite</h3>
+<form id="formCierre" class="form-cierre-tramite" style="padding:2rem;">
 
-<form class="form-cierre-tramite">
+<input type="hidden" id="idTramite" value="00012345">
 
-    <div class="form-row">
+<div class="form-grid">
+<div class="form-group">
+<label>Nº de Trámite</label>
+<input type="text" value="00012345" readonly>
+</div>
+<div class="form-group">
+<label>Usuario</label>
+<input type="text" value="Juan Pérez" readonly>
+</div>
+</div>
 
-        <label>Número de trámite:</label>
+<div class="form-group">
+<label>Estado de la resolución</label>
+<div class="estado-selector">
+<div class="estado-option">
+<input type="radio" name="estadoResolucion" id="aprobado" value="aprobado" checked>
+<label for="aprobado" class="aprobado">
+<span class="material-symbols-outlined">check_circle</span>
+Aprobado
+</label>
+</div>
+<div class="estado-option">
+<input type="radio" name="estadoResolucion" id="rechazado" value="rechazado">
+<label for="rechazado" class="rechazado">
+<span class="material-symbols-outlined">cancel</span>
+Rechazado
+</label>
+</div>
+</div>
+</div>
 
-        <input 
-            type="text" 
-            value="00012345"
-            readonly
-        >
+<div class="form-group">
+<label for="observacion">Motivo y observaciones</label>
+<textarea id="observacion" placeholder="Describa el motivo del estado seleccionado..." rows="4"></textarea>
+</div>
 
-    </div>
-
-    <div class="form-row">
-
-        <label>Usuario:</label>
-
-        <input 
-            type="text"
-            value="Juan Pérez"
-            readonly
-        >
-
-    </div>
-
-    <div class="estado-container">
-
-        <div class="estado-row">
-
-            <span>Aprobado</span>
-
-            <img 
-                src="../imagenes/Logo.png"
-                alt="Aprobado"
-                class="estado-icon success-icon"
-            >
-
-        </div>
-
-        <div class="estado-row">
-
-            <span>Rechazado</span>
-
-            <img 
-                src="../imagenes/Logo.png"
-                alt="Rechazado"
-                class="estado-icon error-icon"
-            >
-
-        </div>
-
-    </div>
-
-    <div class="motivo-container">
-
-        <label>Motivo:</label>
-
-        <textarea></textarea>
-
-    </div>
-
-    <div class="buttons-cierre-tramite">
-
-        <button type="button" class="btn-cancelar">
-            Cancelar
-        </button>
-
-        <button type="submit">
-            Cerrar
-        </button>
-
-    </div>
+<div class="buttons-cierre-tramite">
+<button type="button" class="btn-cancelar">Cancelar</button>
+<button type="submit">Finalizar Trámite</button>
+</div>
 
 </form>
 
-</div>
+<p class="page-footer">© 2024 Health Tramiter - Sistema de Gestión Interna</p>
 
+</div>
 </section>
 
+<script src="../js/main.js" type="module"></script>
 <script src="../js/navegacion.js"></script>
 </body>
 </html>

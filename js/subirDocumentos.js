@@ -30,7 +30,7 @@ export async function subirDocumento() {
             if (resp.code == 200) {
 
                 alert("Documento cargado correctamente.");
-                ir("documentos.html");
+                ir('dashboard.html');
 
             } else {
 

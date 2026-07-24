@@ -1,167 +1,90 @@
 <!doctype html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Notificaciones - Health Tramiter</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
 <link rel="stylesheet" href="../css/estilo.css">
-
 </head>
-
 <body>
 
-<section class="contenedor-notificaciones">
-
-<div class="notificaciones-box">
-
-<div class="logo">
-    <img src="../imagenes/Logo.png" alt="Health Tramiter">
-</div>
+<section class="page-auth">
+<div class="notificaciones-box" style="max-width:640px;">
 
 <div class="header-notificaciones">
-
-    <h3 class="title-h3">Notificaciones</h3>
-
-    <div class="cantidad-notificaciones">
-
-        <img 
-            src="../imagenes/notificaciones-modified.png" 
-            alt="Notificaciones"
-        >
-
-        <span>Tiene 3 notificaciones</span>
-
-    </div>
-
+<div>
+<div class="logo" style="margin-bottom:0.5rem;">
+<img src="../imagenes/Logo.png" alt="Health Tramiter">
+</div>
+<h3 class="title-h3" style="text-align:left;">Notificaciones</h3>
+</div>
+<div class="cantidad-notificaciones">
+<span class="material-symbols-outlined">notifications_active</span>
+<span>Tiene 3 notificaciones</span>
+</div>
 </div>
 
-<div class="cards-notificaciones">
+<div class="cards-notificaciones" id="listaNotificaciones">
 
-    <!-- NOTIFICACIÓN APROBADA -->
+<div class="card-notificacion success">
+<div class="notificacion-header">
+<span class="material-symbols-outlined" style="color:var(--success);font-size:1.75rem;">check_circle</span>
+<div style="flex:1;">
+<h4>Trámite aprobado</h4>
+<small style="color:#9ca3af;">10/08/2025</small>
+</div>
+</div>
+<p>Tu solicitud de autorización ha sido procesada con éxito y se encuentra aprobada.</p>
+<div class="buttons-notificacion">
+<button type="button">Ver detalle</button>
+<button type="button" class="btn-secondary btn-leido">Marcar como leído</button>
+</div>
+</div>
 
-    <div class="card-notificacion success">
+<div class="card-notificacion danger">
+<div class="notificacion-header">
+<span class="material-symbols-outlined" style="color:var(--danger);font-size:1.75rem;">cancel</span>
+<div style="flex:1;">
+<h4>Trámite rechazado</h4>
+<small style="color:#9ca3af;">08/08/2025</small>
+</div>
+</div>
+<p>Tu solicitud fue rechazada debido a documentación incompleta. Por favor revise los detalles.</p>
+<div class="buttons-notificacion">
+<button type="button">Ver detalle</button>
+<button type="button" class="btn-secondary btn-leido">Marcar como leído</button>
+</div>
+</div>
 
-        <div class="notificacion-header">
-
-            <img 
-                src="../imagenes/Logo.png"
-                alt="Aprobado"
-            >
-
-            <h4>Trámite aprobado</h4>
-
-        </div>
-
-        <p>
-            Tu solicitud de autorización fue aprobada
-        </p>
-
-        <span>Fecha: 10/08/2025</span>
-
-        <div class="buttons-notificacion">
-
-            <button>
-                Ver detalle
-            </button>
-
-            <button class="btn-leido">
-                Leído
-            </button>
-
-        </div>
-
-    </div>
-
-    <!-- NOTIFICACIÓN RECHAZADA -->
-
-    <div class="card-notificacion danger">
-
-        <div class="notificacion-header">
-
-            <img 
-                src="../imagenes/Logo.png"
-                alt="Rechazado"
-            >
-
-            <h4>Trámite rechazado</h4>
-
-        </div>
-
-        <p>
-            Tu solicitud fue rechazada
-        </p>
-
-        <span>Fecha: 08/08/2025</span>
-
-        <div class="buttons-notificacion">
-
-            <button>
-                Ver detalle
-            </button>
-
-            <button class="btn-leido">
-                Leído
-            </button>
-
-        </div>
-
-    </div>
-
-    <!-- RECORDATORIO -->
-
-    <div class="card-notificacion warning">
-
-        <div class="notificacion-header">
-
-            <img 
-                src="../imagenes/notificaciones-modified.png"
-                alt="Recordatorio"
-            >
-
-            <h4>Recordatorio</h4>
-
-        </div>
-
-        <p>
-            Tienes un trámite pendiente
-        </p>
-
-        <span>Fecha: 07/08/2025</span>
-
-        <div class="buttons-notificacion">
-
-            <button>
-                Ver detalle
-            </button>
-
-            <button class="btn-leido">
-                Leído
-            </button>
-
-        </div>
-
-    </div>
+<div class="card-notificacion warning">
+<div class="notificacion-header">
+<span class="material-symbols-outlined" style="color:var(--warning);font-size:1.75rem;">notification_important</span>
+<div style="flex:1;">
+<h4>Recordatorio</h4>
+<small style="color:#9ca3af;">07/08/2025</small>
+</div>
+</div>
+<p>Tienes un trámite pendiente de firma electrónica. Caduca en las próximas 48 horas.</p>
+<div class="buttons-notificacion">
+<button type="button">Ver detalle</button>
+<button type="button" class="btn-secondary btn-leido">Marcar como leído</button>
+</div>
+</div>
 
 </div>
 
 <div class="footer-notificaciones">
-
-    <button class="btn-marcar">
-        Marcar todos
-    </button>
-
+<button type="button" class="btn-secondary btn-marcar">
+<span class="material-symbols-outlined">done_all</span>
+Marcar todas como leídas
+</button>
 </div>
 
 </div>
-
 </section>
 
 <script src="../js/navegacion.js"></script>

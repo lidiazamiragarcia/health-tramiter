@@ -1,14 +1,29 @@
 import { validarLogin } from './login.js';
+import { registrarUsuario } from './registroUsuario.js';
+import { validarrecuperar } from './recuperar.js';
+import { editarPerfil } from './editarPerfil.js';
+import { crearTramite } from './crearTramite.js';
+import { subirDocumento } from './subirDocumentos.js';
+import { cerrarTramite } from './cierreTramite.js';
+import { gestionarTramite } from './gestionTramites.js';
+import { gestionarRol } from './gestionRoles.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-    //console.log("Inicio del DOMContentLoaded");
-});
+const formHandlers = {
+    formlogin: validarLogin,
+    formRegistro: registrarUsuario,
+    formRecuperar: validarrecuperar,
+    formPerfil: editarPerfil,
+    formTramite: crearTramite,
+    formDocumentos: subirDocumento,
+    formCierre: cerrarTramite,
+    formGestion: gestionarTramite,
+    formRoles: gestionarRol,
+};
 
-//Evento Submit
 document.addEventListener('submit', (e) => {
-    //console.log("Evento submit detectado");
-    if (e.target && e.target.id === 'formlogin') {
-        e.preventDefault()
-        validarLogin()
+    const handler = formHandlers[e.target?.id];
+    if (handler) {
+        e.preventDefault();
+        handler();
     }
-})
+});

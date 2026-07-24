@@ -2,9 +2,9 @@ import { ir,enviarPeticion} from "./herramientas.js";
 
 export async function crearTramite() {
 
-    let tipoTramite = document.getElementById("Tipo de tramite").value;
-    let eps = document.getElementById("Eps").value;
-    let descripcion = document.getElementById("Descripción").value.trim();
+    let tipoTramite = document.getElementById('tipoTramite').value;
+    let eps = document.getElementById('eps').value;
+    let descripcion = document.getElementById('descripcion').value.trim();
 
     if(tipoTramite === "") {
         alert("seleccione el tipo de tramite.");
@@ -34,7 +34,7 @@ export async function crearTramite() {
             if (resp.code == 200) {
 
                 alert("Trámite creado correctamente.");
-                ir("tramites.html");
+                ir('consultarTramites.html');
 
             } else {
 

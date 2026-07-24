@@ -21,7 +21,7 @@ export async function validarLogin() {
         fSuccess: (resp)=>{
             if(resp.code == 200){
                 alert("El usuario ha iniciado sesión correctamente.");
-                ir("dash.html")
+                ir("dashboard.html")
             }
             else {alert(resp.msg || "Error en la petición");}
         }
