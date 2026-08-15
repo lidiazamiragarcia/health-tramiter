@@ -1,125 +1,155 @@
 <!doctype html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard - Health Tramiter</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
-<link rel="stylesheet" href="../css/estilo.css">
-</head>
-<body class="page-dashboard">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Health Tramiter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+  <body class="page-dashboard">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="logo">
+            <img src="../imagenes/Logo.png" alt="Health Tramiter" />
+        <div class="brand-title">Health Tramiter</div>
+        <p class="brand-sub">Gestión Administrativa</p>
+      </div>
 
-<aside class="sidebar">
-<div class="sidebar-brand">
-<div class="brand-title">Health Tramiter</div>
-<p class="brand-sub">Gestión Administrativa</p>
-</div>
+      <nav class="menu">
+        <a href="editarPerfil.html">
+          <span class="material-symbols-outlined">person</span>
+          <span>Perfil</span>
+        </a>
+        <a href="crearTramite.html">
+          <span class="material-symbols-outlined">assignment</span>
+          <span>Trámites</span>
+        </a>
+        <a href="notificaciones.html">
+          <span class="material-symbols-outlined">notifications</span>
+          <span>Notificaciones</span>
+        </a>
+        <a href="consultarTramites.html">
+          <span class="material-symbols-outlined">search</span>
+          <span>Consultar trámites</span>
+        </a>
+        <div class="menu-spacer">
+          <a href="cerrarSesion.html" class="logout-link">
+            <span class="material-symbols-outlined">logout</span>
+            <span>Cerrar sesión</span>
+          </a>
+        </div>
+      </nav>
+    </aside>
 
-<nav class="menu">
-<a href="editarPerfil.html">
-<span class="material-symbols-outlined">person</span>
-<span>Perfil</span>
-</a>
-<a href="crearTramite.html">
-<span class="material-symbols-outlined">assignment</span>
-<span>Trámites</span>
-</a>
-<a href="notificaciones.html">
-<span class="material-symbols-outlined">notifications</span>
-<span>Notificaciones</span>
-</a>
-<a href="consultarTramites.html">
-<span class="material-symbols-outlined">search</span>
-<span>Consultar trámites</span>
-</a>
-<div class="menu-spacer">
-<a href="cerrarSesion.html" class="logout-link">
-<span class="material-symbols-outlined">logout</span>
-<span>Cerrar sesión</span>
-</a>
-</div>
-</nav>
-</aside>
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+        <h2>Dashboard</h2>
+        <div style="display: flex; align-items: center; gap: 1rem">
+          <button
+            type="button"
+            class="btn-secondary"
+            style="padding: 0.5rem; border-radius: 50%; min-width: auto"
+            title="Ayuda"
+          >
+            <span class="material-symbols-outlined">help</span>
+          </button>
+          <a href="editarPerfil.html" style="text-decoration: none">
+            <div class="usuario-avatar">
+              <span class="material-symbols-outlined">account_circle</span>
+            </div>
+          </a>
+        </div>
+      </header>
 
-<main class="dashboard-main">
+      <div class="dashboard-content">
+        <div class="welcome-block">
+          <h1 class="title-h1">
+            ¡Bienvenido(a)<span id="nombreUsuario"></span> de nuevo!
+          </h1>
+          <p>
+            Aquí podrás gestionar tus trámites, revisar notificaciones y
+            actualizar tu perfil de manera rápida y sencilla.
+          </p>
+        </div>
 
-<header class="dashboard-header">
-<h2>Dashboard</h2>
-<div style="display:flex;align-items:center;gap:1rem;">
-<button type="button" class="btn-secondary" style="padding:0.5rem;border-radius:50%;min-width:auto;" title="Ayuda">
-<span class="material-symbols-outlined">help</span>
-</button>
-<a href="editarPerfil.html" style="text-decoration:none;">
-<div class="usuario-avatar">
-<span class="material-symbols-outlined">account_circle</span>
-</div>
-</a>
-</div>
-</header>
+        <div class="quick-actions">
+          <div class="action-card">
+            <div class="action-card-icon">
+              <span class="material-symbols-outlined">add_circle</span>
+            </div>
+            <h3>Crear trámite</h3>
+            <p>
+              Inicia una nueva solicitud administrativa. Completa los
+              formularios necesarios y adjunta la documentación requerida.
+            </p>
+            <a
+              href="crearTramite.html"
+              class="btn"
+              style="text-decoration: none; display: inline-flex"
+            >
+              Empezar solicitud
+              <span class="material-symbols-outlined" style="font-size: 1rem"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
 
-<div class="dashboard-content">
+          <div class="action-card">
+            <div class="action-card-icon">
+              <span class="material-symbols-outlined">visibility</span>
+            </div>
+            <h3>Ver mis trámites</h3>
+            <p>
+              Consulta el estado actual de tus solicitudes en curso y revisa el
+              historial de tus trámites finalizados.
+            </p>
+            <a
+              href="consultarTramites.html"
+              class="btn btn-ghost"
+              style="text-decoration: none; display: inline-flex"
+            >
+              Ver historial
+              <span class="material-symbols-outlined" style="font-size: 1rem"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+        </div>
 
-<div class="welcome-block">
-<h1 class="title-h1">¡Bienvenido(a)<span id="nombreUsuario"></span> de nuevo!</h1>
-<p>Aquí podrás gestionar tus trámites, revisar notificaciones y actualizar tu perfil de manera rápida y sencilla.</p>
-</div>
+        <div class="activity-section">
+          <h4>Actividad Reciente</h4>
+          <div class="activity-list">
+            <div class="activity-item">
+              <span class="activity-dot success"></span>
+              <div class="activity-info">
+                <p>Trámite #4521 - Autorización de cirugía</p>
+                <small>Actualizado hace 2 horas</small>
+              </div>
+              <span class="badge badge-success">Aprobado</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-dot info"></span>
+              <div class="activity-info">
+                <p>Trámite #4528 - Cambio de médico</p>
+                <small>Creado ayer</small>
+              </div>
+              <span class="badge badge-info">En revisión</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-<div class="quick-actions">
-
-<div class="action-card">
-<div class="action-card-icon">
-<span class="material-symbols-outlined">add_circle</span>
-</div>
-<h3>Crear trámite</h3>
-<p>Inicia una nueva solicitud administrativa. Completa los formularios necesarios y adjunta la documentación requerida.</p>
-<a href="crearTramite.html" class="btn" style="text-decoration:none;display:inline-flex;">
-Empezar solicitud
-<span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
-</a>
-</div>
-
-<div class="action-card">
-<div class="action-card-icon">
-<span class="material-symbols-outlined">visibility</span>
-</div>
-<h3>Ver mis trámites</h3>
-<p>Consulta el estado actual de tus solicitudes en curso y revisa el historial de tus trámites finalizados.</p>
-<a href="consultarTramites.html" class="btn btn-ghost" style="text-decoration:none;display:inline-flex;">
-Ver historial
-<span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span>
-</a>
-</div>
-
-</div>
-
-<div class="activity-section">
-<h4>Actividad Reciente</h4>
-<div class="activity-list">
-<div class="activity-item">
-<span class="activity-dot success"></span>
-<div class="activity-info">
-<p>Trámite #4521 - Autorización de cirugía</p>
-<small>Actualizado hace 2 horas</small>
-</div>
-<span class="badge badge-success">Aprobado</span>
-</div>
-<div class="activity-item">
-<span class="activity-dot info"></span>
-<div class="activity-info">
-<p>Trámite #4528 - Cambio de médico</p>
-<small>Creado ayer</small>
-</div>
-<span class="badge badge-info">En revisión</span>
-</div>
-</div>
-</div>
-
-</div>
-</main>
-
-<script src="../js/navegacion.js"></script>
-</body>
+    <script src="../js/navegacion.js"></script>
+  </body>
 </html>
