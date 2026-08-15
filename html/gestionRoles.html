@@ -13,9 +13,9 @@
 <body>
 
 <section class="page-auth">
-<div class="roles-box" style="max-width:640px;padding:0;overflow:hidden;">
+<div class="roles-box card-flush">
 
-<div style="padding:2rem;text-align:center;border-bottom:1px solid var(--outline);">
+<div class="panel-header">
 <div class="logo">
 <img src="../imagenes/Logo.png" alt="Health Tramiter">
 </div>
@@ -23,7 +23,7 @@
 <p class="subtitle">Asigna y administra los permisos de los usuarios</p>
 </div>
 
-<div style="padding:2rem;background:#fafafa;">
+<div class="panel-body-muted">
 <form id="formRoles">
 
 <div class="form-grid">
@@ -47,7 +47,7 @@
 </div>
 </div>
 
-<div style="display:flex;justify-content:flex-end;margin-top:1rem;">
+<div class="roles-action">
 <button type="submit">
 <span class="material-symbols-outlined">person_add</span>
 Asignar
@@ -57,8 +57,8 @@ Asignar
 </form>
 </div>
 
-<div style="padding:2rem;">
-<h4 style="font-size:0.8rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:1rem;">Usuarios Asignados</h4>
+<div class="panel-body">
+<h4 class="section-caption">Usuarios Asignados</h4>
 
 <div class="usuario-item">
 <div class="usuario-item-info">
@@ -66,15 +66,15 @@ Asignar
 <span class="material-symbols-outlined">person</span>
 </div>
 <div>
-<p style="font-weight:600;color:var(--on-surface);">Juan Pérez</p>
-<p style="font-size:0.75rem;color:#9ca3af;text-transform:uppercase;font-weight:600;">Persona natural</p>
+<p class="text-strong">Juan Pérez</p>
+<p class="user-role">Persona natural</p>
 </div>
 </div>
-<div class="buttons-roles" style="gap:0.35rem;">
-<button type="button" class="btn-secondary btn-editar" style="min-width:auto;padding:0.5rem;" title="Editar">
+<div class="buttons-roles compact-actions">
+<button type="button" class="btn-secondary btn-editar compact-icon-button" title="Editar">
 <span class="material-symbols-outlined">edit</span>
 </button>
-<button type="button" class="btn-secondary btn-eliminar" style="min-width:auto;padding:0.5rem;" title="Eliminar">
+<button type="button" class="btn-secondary btn-eliminar compact-icon-button" title="Eliminar">
 <span class="material-symbols-outlined">delete</span>
 </button>
 </div>

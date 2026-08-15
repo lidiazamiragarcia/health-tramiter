@@ -3,6 +3,9 @@
 ========================================================= */
 
 :root {
+   /* Tipografía base compartida con la pantalla de inicio de sesión. */
+   --font-family-base: 'Manrope', sans-serif;
+   --font-size-base: 16px;
    --primary: #0056b3;
    --primary-hover: #004a9a;
    --primary-light: rgba(0, 86, 179, 0.1);
@@ -37,12 +40,12 @@
 }
 
 html {
-   font-size: 16px;
+   font-size: var(--font-size-base);
    scroll-behavior: smooth;
 }
 
 body {
-   font-family: 'Manrope', sans-serif;
+   font-family: var(--font-family-base);
    background: var(--surface);
    color: var(--on-surface-variant);
    line-height: 1.5;
@@ -85,6 +88,7 @@ a:hover {
    font-weight: 600;
    color: var(--on-surface);
    text-align: center;
+   line-height: 1.2;
 }
 
 .subtitle {
@@ -362,6 +366,7 @@ textarea {
    max-width: var(--max-form-lg);
 }
 
+/* Registro conserva la misma escala de texto utilizada por el login. */
 .auth-footer {
    margin-top: 1.5rem;
    padding-top: 1.25rem;
@@ -1034,6 +1039,56 @@ table.data-table tr:hover {
    object-fit: contain;
    margin: 0 auto 0.5rem;
 }
+
+/* Utilidades de composición: evitan sobrescrituras de estilos en los HTML. */
+.auth-shell { width: 100%; max-width: 28rem; }
+.text-center { text-align: center; }
+.text-muted { color: var(--on-surface-variant); }
+.text-helper { font-size: 0.75rem; color: #9ca3af; }
+.text-strong { font-weight: 600; color: var(--on-surface); }
+.content-spacing-bottom { margin-bottom: 2rem; }
+.card-flush { padding: 0; overflow: hidden; }
+.panel-header { padding: 2rem; text-align: center; border-bottom: 1px solid var(--outline); }
+.panel-header-muted { background: #f8fafc; }
+.panel-body { padding: 2rem; }
+.panel-body-muted { padding: 2rem; background: #fafafa; }
+.table-hidden { display: none; margin-top: 1rem; }
+.upload-title { font-weight: 600; color: var(--on-surface); }
+.upload-help { margin-top: 0.25rem; }
+.file-name { display: block; margin-top: 0.5rem; font-size: 0.85rem; color: var(--primary); }
+.file-help { display: flex; align-items: flex-start; gap: 0.35rem; margin-top: 0.5rem; color: #9ca3af; }
+.icon-sm { font-size: 1rem; }
+.icon-md { font-size: 1.1rem; }
+.auth-form-row { display: flex; justify-content: space-between; align-items: center; }
+.auth-link { font-size: 0.8rem; font-weight: 600; }
+.header-actions { display: flex; align-items: center; gap: 1rem; }
+.icon-button { min-width: auto; padding: 0.5rem; border-radius: 50%; }
+.link-plain { text-decoration: none; }
+.btn-inline { display: inline-flex; text-decoration: none; }
+.form-grid-full { grid-column: 1 / -1; }
+.form-link-center { margin-top: 0.5rem; text-align: center; }
+.form-link-muted { font-size: 0.875rem; color: var(--on-surface-variant); }
+.roles-box { max-width: 40rem; }
+.roles-action { display: flex; justify-content: flex-end; margin-top: 1rem; }
+.section-caption { margin-bottom: 1rem; font-size: 0.8rem; font-weight: 700; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.05em; }
+.user-role { font-size: 0.75rem; font-weight: 600; color: #9ca3af; text-transform: uppercase; }
+.compact-actions { gap: 0.35rem; }
+.compact-icon-button { min-width: auto; padding: 0.5rem; }
+.admin-back-button { padding: 0.5rem 1rem; text-decoration: none; }
+.admin-heading { margin-bottom: 2rem; }
+.admin-filter-grid { grid-template-columns: 2fr 1fr auto; align-items: end; }
+.table-heading-actions { text-align: right; }
+.avatar-initials { width: 2.5rem; height: 2.5rem; font-size: 0.85rem; }
+.notificaciones-box { max-width: 40rem; }
+.logo-compact { margin-bottom: 0.5rem; }
+.title-left { text-align: left; }
+.notification-icon { font-size: 1.75rem; }
+.notification-icon.success { color: var(--success); }
+.notification-icon.danger { color: var(--danger); }
+.notification-icon.warning { color: var(--warning); }
+.flex-grow { flex: 1; }
+.notification-date { color: #9ca3af; }
+.auth-back-link { display: inline-flex; align-items: center; gap: 0.35rem; }
 
 /* =========================================================
    RESPONSIVE

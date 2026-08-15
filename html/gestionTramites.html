@@ -18,7 +18,7 @@
 <img src="../imagenes/Logo.png" alt="Health Tramiter">
 <span>Health Tramiter</span>
 </div>
-<a href="dashboard.html" class="btn btn-secondary" style="text-decoration:none;padding:0.5rem 1rem;">
+<a href="dashboard.html" class="btn btn-secondary admin-back-button">
 <span class="material-symbols-outlined">arrow_back</span>
 Volver
 </a>
@@ -27,13 +27,13 @@ Volver
 
 <main class="admin-main">
 
-<div style="margin-bottom:2rem;">
-<h1 class="title-h1" style="font-size:1.5rem;">Gestión de trámites</h1>
+<div class="admin-heading">
+<h1 class="title-h1">Gestión de trámites</h1>
 <p>Panel administrativo para la revisión y aprobación de solicitudes.</p>
 </div>
 
 <div class="admin-filters">
-<form id="formGestion" class="form-grid" style="grid-template-columns:2fr 1fr auto;align-items:end;">
+<form id="formGestion" class="form-grid admin-filter-grid">
 
 <div class="form-group">
 <label for="buscarTramite">Buscar trámite</label>
@@ -69,14 +69,14 @@ Volver
 <th>Tipo de Trámite</th>
 <th>Fecha</th>
 <th>Estado</th>
-<th style="text-align:right;">Acciones</th>
+<th class="table-heading-actions">Acciones</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <div class="usuario-item-info">
-<div class="usuario-avatar" style="width:2.5rem;height:2.5rem;font-size:0.85rem;">JP</div>
+<div class="usuario-avatar avatar-initials">JP</div>
 <strong>Juan Pérez</strong>
 </div>
 </td>
@@ -94,7 +94,7 @@ Volver
 <tr>
 <td>
 <div class="usuario-item-info">
-<div class="usuario-avatar" style="width:2.5rem;height:2.5rem;font-size:0.85rem;">MG</div>
+<div class="usuario-avatar avatar-initials">MG</div>
 <strong>María García</strong>
 </div>
 </td>
@@ -110,7 +110,7 @@ Volver
 <tr>
 <td>
 <div class="usuario-item-info">
-<div class="usuario-avatar" style="width:2.5rem;height:2.5rem;font-size:0.85rem;">RL</div>
+<div class="usuario-avatar avatar-initials">RL</div>
 <strong>Ricardo López</strong>
 </div>
 </td>
