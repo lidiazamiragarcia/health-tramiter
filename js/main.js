@@ -27,3 +27,4 @@ document.addEventListener('submit', (e) => {
         handler();
     }
 });
+
