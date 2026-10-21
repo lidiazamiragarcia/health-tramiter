@@ -1,0 +1,23 @@
+.navbar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: var(--surface-card);
+  box-shadow: var(--shadow-sm);
+  border-bottom: 1px solid var(--surface-dim);
+}
+
+.title {
+  font-weight: 600;
+  color: var(--on-surface);
+  font-size: 1.1rem;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+}

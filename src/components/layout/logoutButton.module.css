@@ -1,0 +1,22 @@
+.sidebarBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  color: var(--on-surface-variant);
+  font-weight: 500;
+  font-size: 0.925rem;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--trans), color var(--trans);
+}
+
+.sidebarBtn:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+}

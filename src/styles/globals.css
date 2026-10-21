@@ -1,0 +1,29 @@
+@import './tokens.css';
+
+html, body, #__next {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family-base);
+  background: var(--surface);
+  color: var(--on-surface);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Minimal scaffold styles — durante la migración se reutilizará css/estilo.css */
+
+/* Ensure consistent box-sizing across the app */
+*, *::before, *::after {
+  box-sizing: border-box;
+}

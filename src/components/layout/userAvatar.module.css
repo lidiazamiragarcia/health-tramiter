@@ -1,0 +1,41 @@
+.avatar {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  font-weight: 700;
+  line-height: 1;
+  user-select: none;
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.06);
+}
+
+.avatarSm {
+  width: 36px;
+  height: 36px;
+  font-size: 0.95rem;
+}
+
+.avatarMd {
+  width: 48px;
+  height: 48px;
+  font-size: 1.125rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+}

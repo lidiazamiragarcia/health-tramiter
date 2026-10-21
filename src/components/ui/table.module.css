@@ -1,0 +1,33 @@
+.tableWrap {
+  background: var(--surface-card);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-md);
+  overflow: auto;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 640px;
+}
+
+.dataTable th {
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  background: #fafafa;
+  border-bottom: 1px solid var(--outline);
+}
+
+.dataTable td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.9rem;
+}
+
+.dataTable tbody tr:hover td {
+  background: var(--surface-container);
+}

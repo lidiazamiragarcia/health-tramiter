@@ -1,0 +1,24 @@
+.card {
+  background: var(--surface-card);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.cardTitle {
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.cardBody {
+  color: var(--on-surface-variant);
+}
+
